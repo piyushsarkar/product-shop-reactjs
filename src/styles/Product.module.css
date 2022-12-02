@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  grid-gap: 4rem;
+}
+
+.button {
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.3em;
+  margin: 1rem 0;
+}
+
+.image > img {
+  border-radius: 0.4em;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.button:hover {
+  background-color: hsl(183, 100%, 22%);
+}
+
+@media screen and (max-width: 765px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

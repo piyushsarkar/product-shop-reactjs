@@ -1,0 +1,58 @@
+.header {
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: -1px;
+  background: #fff;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5em 4em;
+}
+
+.container a {
+  color: #626262;
+  text-decoration: none;
+} 
+
+.nav {
+  display: flex;
+}
+
+.nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.header :global .active {
+  color: hsl(183, 100%, 15%);
+}
+
+.main {
+  padding: 2em 4em;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 765px) {
+  .container {
+    padding: 1.5em 2em;
+  }
+  .main {
+    padding: 2em 2em;
+  }
+}
